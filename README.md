@@ -1,0 +1,1 @@
+- All pages templates for beginner web dev

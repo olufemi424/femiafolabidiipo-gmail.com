@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/index.html#showcase -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./myTunes _ Welcome_files/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="./myTunes _ Welcome_files/css" rel="stylesheet">
+    <link rel="stylesheet" href="./myTunes _ Welcome_files/style.css">
+    <title>myTunes | Welcome</title>
+</head>
+
+<body>
+
+    <!-- showcase and nav -->
+
+    <div class="" id="showcase">
+        <header>
+            <nav class="cf">
+                <ul class="cf">
+                    <li class="hide-on-small">
+                        <a href="http://127.0.0.1:5500/index.html#showcase">ImyTunes</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/index.html#showcase">Overview</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/index.html#music">Music</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/index.html#video">Video</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/index.html#gift-cards">Gift Cards</a>
+                    </li>
+                </ul>
+                <a href="http://127.0.0.1:5500/index.html#" id="openup">myTunes</a>
+            </nav>
+        </header>
+
+
+        <div class="section-main container">
+            <h1>myTunes</h1>
+            <h2>Your music, movies, and TV shows take center stage.</h2>
+            <p class="lead">myTunes is the best way to organize and enjoy the music, movies, and TV shows you already
+                have — and
+                shop
+                for
+                the ones you want. Enjoy all the entertainment iTunes has to offer on your Mac and PC.</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- music section -->
+
+
+
+    <!-- video section -->
+
+    <!-- entertainment section -->
+
+    <!-- footer -->
+
+
+
+
+
+    <script src="./myTunes _ Welcome_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./myTunes _ Welcome_files/main.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

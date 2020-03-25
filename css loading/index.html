@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Css loading</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Welcome</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        expedita omnis modi pariatur impedit mollitia cum quaerat cupiditate
+        culpa rem laborum quos inventore quo, sed quis sequi quisquam ipsam
+        doloribus distinctio ad consectetur accusamus magnam cumque commodi?
+        Enim labore atque totam corporis aspernatur blanditiis quos ipsa,
+        consequuntur consequatur ex officiis.
+      </p>
+    </div>
+
+    <script>
+      var parag = document.querySelector(".main p");
+      var main = document.querySelector(".main");
+
+      var loading = function() {
+        parag.style.display = "none";
+        main.classList.add("spinner-1");
+      };
+
+      //mimic server request
+      var spinner = function() {
+        main.classList.remove("spinner-1");
+        parag.style.display = "block";
+      };
+
+      loading();
+      setTimeout(spinner, 3000);
+    </script>
+  </body>
+</html>
